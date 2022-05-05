@@ -18,15 +18,18 @@ width: 100vw;
 background-color: #1db954;
 gap: 5rem;
   img{
-    height: 20vh;
+    height: 15vh;
   }
   button{
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     border-radius: 5rem;
     border: none;
     background-color: black;
-    color: #49f585;
-    font-size: 1.4rem;
+    color: #1db954;
+    font-size: 1.2rem;
     cursor: pointer;
+      &:hover {
+          color: white;
+        }
   }
 `; 
