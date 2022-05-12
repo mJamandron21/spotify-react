@@ -6,7 +6,7 @@ import { MdHomeFilled, MdSearch } from 'react-icons/md'
 export default function Sidebar() {
   return (
     <Container>
-      <div className="top_links">
+      <div className="top-links">
         <div className="logo">
           <img src = "https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png" alt = "spotify-logo"/>
         </div>
@@ -37,7 +37,7 @@ display: flex;
 flex-direction: column;
 height: 100%;
 width: 100%;
-.top_links{
+.top-links{
   display: flex;
   flex-direction: column;
   .logo{
