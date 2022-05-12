@@ -58,6 +58,9 @@ width: 100%;
       display: flex;
       gap: 1rem;
     }
+    li :hover{
+      color: #ececec;
+    }
   }
 }
 `;
