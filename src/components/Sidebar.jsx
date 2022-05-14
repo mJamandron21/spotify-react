@@ -57,9 +57,11 @@ width: 100%;
     li{
       display: flex;
       gap: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
     }
     li :hover{
-      color: #ececec;
+      color: white;
     }
   }
 }
