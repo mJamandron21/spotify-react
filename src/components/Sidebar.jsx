@@ -43,9 +43,9 @@ width: 100%;
   flex-direction: column;
   .logo{
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem 0.2rem;
     img{
-      max-inline-size: 80%;
+      max-inline-size: 70%;
       block-size: auto;
     }
   }
