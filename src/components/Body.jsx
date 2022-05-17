@@ -6,7 +6,7 @@ import { useStateProvider } from '../utils/StateProvider';
 import { reducerCases } from '../utils/Constants';
 
 export default function Body() {
-  const [{ token, selectedPlaylistId }, dispatch] = useStateProvider();
+  const [{ token, selectedPlaylistId, selectedPlaylist }, dispatch] = useStateProvider();
 
   useEffect(() => {
     const getInitialPlaylist = async () => {
@@ -44,7 +44,7 @@ export default function Body() {
 
     };
     getInitialPlaylist();
-  }, [token, dispatch]);     
+  }, [token, dispatch, selectedPlaylist]);     
 
   return (
     <Container>Body</Container>
