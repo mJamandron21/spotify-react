@@ -44,7 +44,7 @@ export default function Body() {
 
     };
     getInitialPlaylist();
-  }, [token, dispatch, selectedPlaylist, selectedPlaylistId]);     
+  }, [token, dispatch, selectedPlaylist]);     
 
   return (
     <Container>
