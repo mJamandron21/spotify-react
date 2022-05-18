@@ -27,8 +27,8 @@ const Container = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 1rem 2rem;
-height: 15vh;
+padding: 0.3rem 2rem;
+height: 10vh;
 position: sticky;
 top: 0;
 transition: 0.3s ease-in-out;
