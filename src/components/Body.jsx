@@ -160,7 +160,7 @@ const List = styled.div`
     margin: 1rem 0 0 0;
     position: sticky;
     top: 15vh;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     transition: 0.3sec ease-in-out;
   }
   .tracks{
