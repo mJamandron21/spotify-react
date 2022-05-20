@@ -10,16 +10,16 @@ export default function Navbar({navBackground}) {
   // console.log ({ userInfo }, "from navbar" );
   return (
     <Container navBackground={navBackground}>
-      <div className="search_bar">
+      <SearchBar>
         <FaSearch />
         <input type="text" placeholder="Artist, songs, or podcasts" />
-      </div>
-      <div className="avatar">
+      </SearchBar>
+      <Avatar>
         <a href={url}>
           <CgProfile />
           <span>{userInfo?.userName}</span>
         </a>
-      </div>
+      </Avatar>
     </Container>
   )
 }
@@ -35,14 +35,17 @@ top: 0;
 transition: 0.3s ease-in-out;
 background-color: ${({ navBackground }) => 
 navBackground ? "rgba(0,0,0,0.7)" : "none" };
-.search_bar {
-  background-color: white;
-  width: 30%;
-  padding: 0.2rem 0.7rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 2rem;
+
+`;
+
+const SearchBar = styled.div`
+background-color: white;
+width: 30%;
+padding: 0.2rem 0.7rem;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+border-radius: 2rem;
   input {
     border: none;
     height: 2rem;
@@ -51,15 +54,16 @@ navBackground ? "rgba(0,0,0,0.7)" : "none" };
       outline: none;
     }
   }
-}
-.avatar {
-  background-color: black;
-  padding: 0.2rem 0.4rem;
-  padding-right: 1rem;
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+`;
+
+const Avatar = styled.div`
+background-color: black;
+padding: 0.2rem 0.4rem;
+padding-right: 1rem;
+border-radius: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
   a{
     display: flex;
     justify-content: center;
@@ -76,5 +80,4 @@ navBackground ? "rgba(0,0,0,0.7)" : "none" };
       color: #c7c5c5;
     }
   }
-}
 `;
