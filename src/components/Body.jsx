@@ -5,7 +5,7 @@ import { AiFillClockCircle } from 'react-icons/ai'
 import { useStateProvider } from '../utils/StateProvider';
 import { reducerCases } from '../utils/Constants';
 
-export default function Body() {
+export default function Body({ headerBackground }) {
   const [{ token, selectedPlaylistId, selectedPlaylist }, dispatch] = useStateProvider();
 
   useEffect(() => {
@@ -47,7 +47,7 @@ export default function Body() {
   }, [token, dispatch, selectedPlaylist]);     
 
   return (
-    <Container>
+    <Container headerBackground={headerBackground}>
       {selectedPlaylist && (
         <>
         <Playlist>
@@ -162,6 +162,8 @@ const List = styled.div`
     top: 15vh;
     padding: 1rem 2rem;
     transition: 0.3sec ease-in-out;
+    background-color: ${({ headerBackground }) => 
+    headerBackground ? "#000000dc" : "none" };
   }
   .tracks{
     margin: 0 2rem;
