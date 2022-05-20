@@ -50,17 +50,17 @@ export default function Body() {
     <Container>
       {selectedPlaylist && (
         <>
-        <div className="playlist">
+        <Playlist>
           <div className="image">
             <img src={selectedPlaylist.image} alt="selectedplaylist" />
           </div>
-          <div className="details">
+          <Details>
             <span className='type'>PLAYLIST</span>
             <h1 className='title'>{selectedPlaylist.name}</h1>
             <p className='description'>{selectedPlaylist.description}</p>
-          </div>
-        </div>
-        <div className="list">
+          </Details>
+        </Playlist>
+        <List>
           <div className="header_row">
             <div className="col">
               <span>#</span>
@@ -111,7 +111,7 @@ export default function Body() {
             })}
 
           </div>
-        </div>
+        </List>
         </>
       )}
       
@@ -119,35 +119,40 @@ export default function Body() {
   )
 }
 
-
 const Container = styled.div`
-.playlist{
-  margin: 0 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1.3rem;
+padding-left: 1rem;
+padding-right: 1rem;
+`;
+
+const Playlist = styled.div`
+margin: 0 2rem;
+display: flex;
+align-items: center;
+gap: 1.3rem;
   .image{
     img{
       height: 15rem;
       box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
     }
   }
-  .details{
-    display: flex;
-    flex-direction: column;
-    color: #e0dede;
-    .type{
-      margin-top: 10rem;
-      font-size: 0.9rem;
-    }
-    .title{
-      margin-top: 0;
-      color: white;
-      font-size: 4rem;
-    }
+`;
+
+const Details = styled.div`
+display: flex;
+flex-direction: column;
+color: #e0dede;
+  .type{
+    margin-top: 10rem;
+    font-size: 0.9rem;
   }
-}
-.list{
+  .title{
+    margin-top: 0;
+    color: white;
+    font-size: 4rem;
+  }
+`;
+
+const List = styled.div`
   .header_row{
     display: grid;
     grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
@@ -177,5 +182,4 @@ const Container = styled.div`
       }
     }
   }
-}
 `;
