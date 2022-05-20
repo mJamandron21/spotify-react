@@ -39,7 +39,7 @@ export default function Spotify() {
 
   return (
     <Container>
-      <div className='spotify-body'>
+      <SpotifyBody>
         <Sidebar />
         <div className='body' ref={bodyRef} onScroll={bodyScrolled}>
           <Navbar navBackground={navBackground}/>
@@ -47,7 +47,7 @@ export default function Spotify() {
             <Body headerBackground={headerBackground}/>
           </div>
         </div>
-      </div>
+      </SpotifyBody>
       <div className='spotify-footer'>
         <Footer />
       </div>
@@ -61,13 +61,15 @@ const Container = styled.div`
   overflow: hidden;
   display: grid;
   grid-template-rows: 85vh 15vh;
-  .spotify-body {
-    display: grid;
-    grid-template-columns: 15vw 85vw;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(transparent, rgba(0,0,0,1));
-    background-color: #1a1a1a;
+`;
+
+const SpotifyBody = styled.div`
+  display: grid;
+  grid-template-columns: 15vw 85vw;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0,0,0,1));
+  background-color: #1a1a1a;
     .body {
       height: 100%;
       width:  100%;
@@ -79,5 +81,4 @@ const Container = styled.div`
         }
       } 
     }
-  }
 `;
