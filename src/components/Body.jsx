@@ -179,6 +179,17 @@ const List = styled.div`
         display: flex;
         align-items: center;
         color: #dddcdc;
+        img{
+          height: 40px;
+        }
+      }
+      .detail{
+        display: flex;
+        gap: 1rem;
+        .info{
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }
