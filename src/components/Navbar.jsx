@@ -6,6 +6,7 @@ import { useStateProvider } from '../utils/StateProvider'
 
 export default function Navbar({navBackground}) {
   const [{ userInfo }] = useStateProvider();
+  let url="";
   // console.log ({ userInfo }, "from navbar" );
   return (
     <Container navBackground={navBackground}>
@@ -14,7 +15,7 @@ export default function Navbar({navBackground}) {
         <input type="text" placeholder="Artist, songs, or podcasts" />
       </div>
       <div className="avatar">
-        <a>
+        <a href={url}>
           <CgProfile />
           <span>{userInfo?.userName}</span>
         </a>
