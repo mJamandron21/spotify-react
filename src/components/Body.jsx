@@ -158,5 +158,24 @@ const Container = styled.div`
     padding: 1rem 3rem;
     transition: 0.3sec ease-in-out;
   }
+  .tracks{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    .row{
+      padding: 0.5rem 1 rem;
+      display: grid;
+      grid-template-columns: 0.3fr 3.1fr 2fr 0.1fr;
+      &:hover {
+        background-color: rgba(0,0,0,0.25);
+      }
+      .col {
+        display: flex;
+        align-items: center;
+        color: #dddcdc;
+      }
+    }
+  }
 }
 `;
