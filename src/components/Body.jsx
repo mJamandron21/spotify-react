@@ -173,7 +173,7 @@ const List = styled.div`
     headerBackground ? "#000000dc" : "none" };
   }
   .tracks{
-    margin: 0 2rem;
+    margin: 1rem 2rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
@@ -183,10 +183,13 @@ const List = styled.div`
       grid-template-columns: 0.3fr 3.1fr 2fr 0.1fr;
       &:hover {
         background-color: rgba(0,0,0,0.25);
+        transition: 0.3sec ease-in-out;
       }
       .col {
         display: flex;
         align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         color: #dddcdc;
         img{
           height: 40px;
