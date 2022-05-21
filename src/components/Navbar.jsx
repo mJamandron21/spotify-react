@@ -29,7 +29,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0.3rem 2rem;
-height: 20vh;
+height: 13.8vh;
 position: sticky;
 top: 0;
 transition: 0.3s ease-in-out;
