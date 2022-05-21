@@ -54,7 +54,7 @@ export default function Body({ headerBackground }) {
   }
 
   return (
-    <Container headerBackground={headerBackground}>
+    <Container>
       {selectedPlaylist && (
         <>
         <Playlist>
@@ -67,7 +67,7 @@ export default function Body({ headerBackground }) {
             <p className='description'>{selectedPlaylist.description}</p>
           </Details>
         </Playlist>
-        <List>
+        <List headerBackground={headerBackground}>
           <div className="header_row">
             <div className="col">
               <span>#</span>
@@ -127,8 +127,8 @@ export default function Body({ headerBackground }) {
 }
 
 const Container = styled.div`
-padding-left: 1rem;
-padding-right: 1rem;
+padding-left: 0;
+padding-right: 0;
 `;
 
 const Playlist = styled.div`

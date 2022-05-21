@@ -29,12 +29,12 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0.3rem 2rem;
-height: 10vh;
+height: 20vh;
 position: sticky;
 top: 0;
 transition: 0.3s ease-in-out;
 background-color: ${({ navBackground }) => 
-navBackground ? "rgba(0,0,0,0.7)" : "none" };
+navBackground ? "#000000dc" : "none" };
 
 `;
 
