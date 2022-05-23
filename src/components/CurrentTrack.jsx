@@ -52,5 +52,22 @@ return (
 }
 
 const Container = styled.div`
-    
+padding: 0;
+margin: 0;
+    .track{
+        display:flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .track_info{
+            display:flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            h4{
+                color: white;
+            }
+            h6{
+                color: #b3b3b3
+            }
+        }
 `;
