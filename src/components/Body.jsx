@@ -166,7 +166,7 @@ const List = styled.div`
     color: #dddcdc;
     margin: 1rem 0 0 0;
     position: sticky;
-    top: 14.8vh;
+    top: 13.8vh;
     padding: 1rem 2rem;
     transition: 0.3sec ease-in-out;
     background-color: ${({ headerBackground }) => 
