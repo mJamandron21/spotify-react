@@ -2,12 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import CurrentTrack from './CurrentTrack';
 import PlayerControllers from './PlayerControllers';
+import VolumeController from './VolumeController';
 
 export default function Footer() {
   return (
     <Container>
       <CurrentTrack />
       <PlayerControllers />
+      <VolumeController />
     </Container>
   )
 }
