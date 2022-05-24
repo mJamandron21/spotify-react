@@ -40,7 +40,7 @@ const Container = styled.div`
         background-color: white;
     } */
     input[type='range'] {
-      /* overflow: hidden; */
+      overflow: hidden;
       width: 10rem;
       border-radius: 2rem;
       height: 0.5rem;
