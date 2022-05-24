@@ -13,10 +13,47 @@ import { FiRepeat } from 'react-icons/fi';
 
 export default function PlayerControllers() {
   return (
-    <Container>PlayerControllers</Container>
+    <Container>
+        <div className="shuffle">
+            <BsShuffle />
+        </div>
+        <div className="previous">
+            <CgPlayTrackPrev />
+        </div>
+        <div className="state">
+            { playerState ? <BsFillPauseCircleFill /> : <BsFillPlayCircleFill />} 
+        </div>
+        <div className="next">
+            <CgPlayTrackNext />
+        </div>
+        <div className="repeat">
+            <FiRepeat />
+      </div>
+    </Container>
   )
 }
 
 
 const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  svg {
+    color: #b3b3b3;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: white;
+    }
+  }
+  .state {
+    svg {
+      color: white;
+    }
+  }
+  .previous,
+  .next,
+  .state {
+    font-size: 2rem;
+  }
 `;
