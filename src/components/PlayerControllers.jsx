@@ -34,6 +34,7 @@ export default function PlayerControllers() {
       playerState: !playerState,
     });
   };
+
   const changeTrack = async (type) => {
     await axios.post(
       `https://api.spotify.com/v1/me/player/${type}`,
@@ -46,6 +47,7 @@ export default function PlayerControllers() {
       }
     );
     dispatch({ type: reducerCases.SET_PLAYER_STATE, playerState: true });
+
     const response1 = await axios.get(
       "https://api.spotify.com/v1/me/player/currently-playing",
       {
@@ -67,6 +69,7 @@ export default function PlayerControllers() {
       dispatch({ type: reducerCases.SET_PLAYING, currentPlaying: null });
     }
   };
+  
   return (
     <Container>
         <div className="shuffle">

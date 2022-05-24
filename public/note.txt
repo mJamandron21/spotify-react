@@ -1,2 +1,6 @@
 ISSUE: Keep getting 204 when requesting the currently playing track.
     Solution: I found solution. In my case I only started to play any song in my Windows desktop app. This makes my Windows app active and current device.
+
+NOTE!!
+    error: {status: 403, message: "Player command failed: Premium required", reason: "PREMIUM_REQUIRED"}
+> Premnium account is recquired to use the api from "user-modify-playback-state"
