@@ -4,3 +4,4 @@ ISSUE: Keep getting 204 when requesting the currently playing track.
 NOTE!!
     error: {status: 403, message: "Player command failed: Premium required", reason: "PREMIUM_REQUIRED"}
 > Premnium account is recquired to use the api from "user-modify-playback-state"
+> Premium account is required for changing the current playing tracks.

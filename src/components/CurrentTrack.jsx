@@ -7,6 +7,7 @@ import { reducerCases } from '../utils/Constants';
 
 export default function CurrentTrack() {    
 const [{ token, currentPlaying }, dispatch] = useStateProvider();
+// console.log("component",currentPlaying)
 useEffect(() => {
     const getCurrentTrack = async () => {
         const response = await axios.get('https://api.spotify.com/v1/me/player/currently-playing', {
